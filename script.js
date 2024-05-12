@@ -51,6 +51,7 @@ function newElement() {
     span.appendChild(txt);
     li.appendChild(span);
 
+    // Creer une boocle for pour ajouter un bouton de fermeture à chaque élément de la liste
     for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
             var div = this.parentElement;
