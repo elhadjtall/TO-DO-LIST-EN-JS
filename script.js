@@ -31,18 +31,20 @@ list.addEventListener('click' , function(ev) {
 }, false );
 
 // Créer un nouvel élément de liste en cliquant sur le bouton "Ajouter"
-function newElement () {
+function newElement() {
     var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").Value;
+    var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
-        alert("Tu dois écrire quelque chose !");
+        alert("You must write something!");
     } else {
         document.getElementById("myUL").appendChild(li);
     }
     document.getElementById("myInput").value = "";
 
+
+    // Creer une variable  
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
